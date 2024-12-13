@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade" version="5.0">
+	<name>mod_phocacart_currency</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>12/06/2024</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>5.0.0Beta61</version>
+	<description>MOD_PHOCACART_CURRENCY_DESCRIPTION</description>
+	<projectName>PhocaCartCurrencyModule</projectName>
+
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_phocacart_currency">index.html</filename>
+		<filename module="mod_phocacart_currency">mod_phocacart_currency.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_currency.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_currency.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_button" default="1" type="radio" filter="integer" validate="options" layout="joomla.form.field.radio.switcher" label="MOD_PHOCACART_CURRENCY_FIELD_SHOW_BUTTON_LABEL" description="MOD_PHOCACART_CURRENCY_FIELD_SHOW_BUTTON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" class="form-select" validate="moduleLayout"/>
+				<field name="moduleclass_sfx" type="textarea" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" rows="3" validate="CssIdentifier"/>
+				<field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" default="1" filter="integer" validate="options">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="number" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" default="900" filter="integer"/>
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"/>
+				</field>
+            </fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="MOD_PHOCACART_CURRENCY" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaCartCurrencyModule/master/manifest.xml]]></server>
+	</updateservers>
+</extension>

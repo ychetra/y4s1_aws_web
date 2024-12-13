@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fieldset addfieldpath="/administrator/components/com_phocacart/models/fields">
+
+<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" required="true" readonly="true" class="readonly" />
+
+<field name="title" type="phocatext" i18n="true" class="form-control" size="40" label="COM_PHOCACART_FIELD_TITLE_LABEL" description="COM_PHOCACART_FIELD_TITLE_DESC" required="true"  />
+
+<field name="alias" type="phocatext" i18n="true" class="form-control" size="40" label="COM_PHOCACART_FIELD_ALIAS_LABEL" description="COM_PHOCACART_FIELD_ALIAS_DESC" />
+
+<field name="tax_rate" type="text" class="form-control" size="40" label="COM_PHOCACART_FIELD_TAX_RATE_LABEL" description="COM_PHOCACART_FIELD_TAX_RATE_DESC" />
+<field name="calculation_type" type="list" class="form-select" label="COM_PHOCACART_FIELD_CALCULATION_TYPE_LABEL" description="COM_PHOCACART_FIELD_CALCULATION_TYPE_DESC" size="1" default="1">
+	<option value="1">COM_PHOCACART_PERCENTAGE</option>
+	<option	value="2">COM_PHOCACART_FIXED_AMOUNT</option>
+</field>
+
+
+<field name="tax_hide" type="list" default="" label="COM_PHOCACART_FIELD_HIDE_TAX_LABEL" description="COM_PHOCACART_FIELD_HIDE_TAX_DESC" layout="joomla.form.field.list-fancy-select"  multiple="true">
+	<option value="1">COM_PHOCACART_PRODUCT_PRICES</option>
+	<option value="2">COM_PHOCACART_PRODUCT_PRICES_INCLUDING_NETTO</option>
+	<option value="3">COM_PHOCACART_CHECKOUT</option>
+	<option value="4">COM_PHOCACART_CART</option>
+	<option value="5">COM_PHOCACART_ORDER</option>
+	<option value="6">COM_PHOCACART_CATALOG</option>
+	<option value="7">COM_PHOCACART_CATALOG_INCLUDING_NETTO</option>
+	<option value="8">COM_PHOCACART_CHECKOUT_SHIPPING</option>
+	<option value="9">COM_PHOCACART_CHECKOUT_SHIPPING_INCLUDING_NETTO</option>
+	<option value="10">COM_PHOCACART_CHECKOUT_PAYMENT</option>
+	<option value="11">COM_PHOCACART_CHECKOUT_PAYMENT_INCLUDING_NETTO</option>
+	<option value="12">COM_PHOCACART_PRODUCT_PRICES_DISCOUNT</option>
+	<option value="13">COM_PHOCACART_PRODUCT_PRICES_DISCOUNT_INCLUDING_NETTO</option>
+</field>
+
+<field name="ordering" type="PhocacartOrdering" table="tax" class="form-select" label="COM_PHOCACART_FIELD_ORDERING_LABEL" description="COM_PHOCACART_FIELD_ORDERING_DESC" />
+	</fieldset>
+
+
+	<fieldset name="publish" label="COM_PHOCACART_GROUP_LABEL_PUBLISHING_DETAILS" >
+
+<field name="published" type="list" class="form-select" label="COM_PHOCACART_FIELD_PUBLISHED_LABEL" description="COM_PHOCACART_FIELD_PUBLISHED_DESC" size="1" default="1">
+	<option value="1">JPUBLISHED</option>
+	<option	value="0">JUNPUBLISHED</option>
+</field>
+	</fieldset>
+</form>

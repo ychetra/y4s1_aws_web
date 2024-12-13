@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PHOCACART_CATEGORIES_LAYOUT">
+		<message>
+			<![CDATA[COM_PHOCACART_CATEGORIES_LAYOUT_DESC]]>
+		</message>
+	</layout>
+
+		<name>COM_PHOCACART_CATEGORIES_LAYOUT</name>
+		<description>COM_PHOCACART_CATEGORIES_LAYOUT_DESC</description>
+
+        <fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_phocacart/models/fields">
+
+            <!--
+            Possible solution for
+            Joomla problem in:
+            - libraries/src/Component/Router/Rules/StandardRules.php
+			- public function build(&$query, &$segments)
+            - elseif ((int) $item->query[$view->key] === (int) $id)
+            Sometimes Roter does not get ID (even there is no ID for categories view) and returns error.
+            Ideally it should be handled in the code, but unfortunately there is no access
+
+            <field name="id" type="hidden" default="0" label="COM_PHOCACART_ID" description="COM_PHOCACART_ID"  />
+            -->
+		</fieldset>
+	</fields>
+
+		<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_phocacart/models/fields" >
+
+	<field name="show_categories" type="radio" layout="joomla.form.field.radio.switcher" default="1" filter="integer" label="COM_PHOCACART_FIELD_SHOW_CATEGORIES_LABEL" description="COM_PHOCACART_FIELD_SHOW_CATEGORIES_DESC">
+		<option value="0">COM_PHOCACART_HIDE</option>
+		<option value="1">COM_PHOCACART_DISPLAY</option>
+	</field>
+
+		<field name="display_categories" type="phocacartcategory" section="com_phocacart" showon="show_categories:1" default="0" label="COM_PHOCACART_FIELD_DISPLAY_CATEGORIES_LABEL" description="COM_PHOCACART_FIELD_DISPLAY_CATEGORIES_DESC" multiple="true" />
+
+		<field name="hide_categories" type="phocacartcategory" section="com_phocacart" showon="show_categories:1" default="0" label="COM_PHOCACART_FIELD_HIDE_CATEGORIES_LABEL" description="COM_PHOCACART_FIELD_HIDE_CATEGORIES_DESC" multiple="true" />
+
+		<field name="show_pagination" type="radio"  default="" filter="integer" label="COM_PHOCACART_FIELD_SHOW_PAGINATION_LABEL" description="COM_PHOCACART_FIELD_SHOW_PAGINATION_DESC">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">COM_PHOCACART_HIDE</option>
+			<option value="1">COM_PHOCACART_DISPLAY</option>
+		</field>
+
+		<field name="show_pagination_top" type="radio"  default="" filter="integer" label="COM_PHOCACART_FIELD_SHOW_PAGINATION_TOP_LABEL" description="COM_PHOCACART_FIELD_SHOW_PAGINATION_TOP_DESC">
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="0">COM_PHOCACART_HIDE</option>
+			<option value="1">COM_PHOCACART_DISPLAY</option>
+		</field>
+
+		</fieldset>
+</fields>
+
+</metadata>

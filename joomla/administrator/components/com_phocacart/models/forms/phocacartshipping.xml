@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<config>
+		<inlinehelp button="show"/>
+	</config>
+
+	<fields addfieldpath="/administrator/components/com_phocacart/models/fields">
+		<fieldset name="title">
+			<field name="title" type="phocatext" i18n="true" required="true" label="COM_PHOCACART_FIELD_TITLE_LABEL" description="COM_PHOCACART_FIELD_TITLE_DESC" />
+
+			<field name="alias" type="phocahidden" i18n="true" />
+		</fieldset>
+
+		<fieldset name="general" label="COM_PHOCACART_GENERAL_OPTIONS">
+			<field name="code" type="text" label="COM_PHOCACART_FIELD_SHIPPING_CODE_LABEL" description="COM_PHOCACART_FIELD_SHIPPING_CODE_DESC" />
+
+			<field name="calculation_type" type="list" default="0" label="COM_PHOCACART_FIELD_CALCULATION_TYPE_LABEL" description="COM_PHOCACART_FIELD_CALCULATION_TYPE_DESC">
+				<option value="1">COM_PHOCACART_PERCENTAGE</option>
+				<option	value="0">COM_PHOCACART_FIXED_AMOUNT</option>
+			</field>
+
+			<field name="cost" type="text" label="COM_PHOCACART_FIELD_COST_LABEL" description="COM_PHOCACART_FIELD_SHIPPING_COST_DESC" />
+
+			<field name="cost_additional" type="text" label="COM_PHOCACART_FIELD_ADDITIONAL_COSTS_SHIPPING_METHOD_LABEL" description="COM_PHOCACART_FIELD_ADDITIONAL_COSTS_SHIPPING_METHOD_DESC" />
+
+			<field name="tax_id" type="phocatax" label="COM_PHOCACART_FIELD_TAX_LABEL" description="COM_PHOCACART_FIELD_TAX_DESC" />
+
+			<field name="change_tax" type="list" default="0" label="COM_PHOCACART_FIELD_SHIPPING_CHANGE_TAX_LABEL" description="COM_PHOCACART_FIELD_SHIPPING_CHANGE_TAX_DESC">
+				<option	value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="image" type="media" label="COM_PHOCACART_FIELD_IMAGE_LABEL" description="COM_PHOCACART_FIELD_IMAGE_DESC" />
+
+			<field name="description" type="phocaeditor" i18n="true" buttons="true" hide="pagebreak,readmore" filter="\Phoca\PhocaCart\Input\InputHelper::filterText" label="COM_PHOCACART_FIELD_DESCRIPTION_LABEL" description="COM_PHOCACART_FIELD_DESCRIPTION_DESC" />
+
+			<field name="description_info" type="phocaeditor" i18n="true" buttons="true" hide="pagebreak,readmore" filter="\Phoca\PhocaCart\Input\InputHelper::filterText" label="COM_PHOCACART_FIELD_SHIPPING_DESCRIPTION_INFO_VIEW_LABEL" description="COM_PHOCACART_FIELD_SHIPPING_DESCRIPTION_INFO_VIEW_DESC" />
+		</fieldset>
+
+		<fieldset name="publish" label="COM_PHOCACART_GROUP_LABEL_PUBLISHING_DETAILS" >
+			<field name="published" type="list" default="1" class="form-select-color-state" label="COM_PHOCACART_FIELD_PUBLISHED_LABEL" description="COM_PHOCACART_FIELD_PUBLISHED_DESC">
+				<option value="1">JPUBLISHED</option>
+				<option	value="0">JUNPUBLISHED</option>
+			</field>
+
+			<field name="default" type="radio" default="0" layout="joomla.form.field.radio.switcher" label="COM_PHOCACART_FIELD_DEFAULT_LABEL" description="COM_PHOCACART_FIELD_DEFAULT_DESC">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field name="method" type="phocaPluginMethod" plugintype="2" label="COM_PHOCACART_FIELD_SHIPPING_METHOD_LABEL" description="COM_PHOCACART_FIELD_SHIPPING_METHOD_DESC" />
+
+			<field name="group" type="PhocacartGroups" layout="joomla.form.field.list-fancy-select" multiple="true" table="7" label="COM_PHOCACART_FIELD_CUSTOMER_GROUP_LABEL" description="COM_PHOCACART_FIELD_CUSTOMER_GROUP_DESC"  />
+
+			<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC" />
+
+			<field name="type" type="list" default="0" label="COM_PHOCACART_FIELD_TYPE_LABEL" description="COM_PHOCACART_FIELD_TYPE_DESC">
+				<option	value="0">COM_PHOCACART_COMMON</option>
+				<option value="1">COM_PHOCACART_ONLINE_SHOP_ONLY</option>
+				<option value="2">COM_PHOCACART_POS_ONLY</option>
+			</field>
+
+			<field name="ordering" type="PhocacartOrdering" table="shipping" class="form-select" label="COM_PHOCACART_FIELD_ORDERING_LABEL" description="COM_PHOCACART_FIELD_ORDERING_DESC" />
+
+			<field name="id" type="hidden" />
+		</fieldset>
+
+		<fieldset name="rules" label="COM_PHOCACART_RULES">
+			<field name="active_weight" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_WEIGHT_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_WEIGHT_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="lowest_weight" type="text" showon="active_weight:1" label="COM_PHOCACART_FIELD_LOWEST_WEIGHT_LABEL" description="COM_PHOCACART_FIELD_LOWEST_WEIGHT_DESC" />
+
+			<field name="highest_weight" type="text" showon="active_weight:1" label="COM_PHOCACART_FIELD_HIGHEST_WEIGHT_LABEL" description="COM_PHOCACART_FIELD_HIGHEST_WEIGHT_DESC" />
+
+			<field name="active_size" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_SIZE_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_SIZE_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="maximal_width" type="text" showon="active_size:1" label="COM_PHOCACART_FIELD_MAXIMAL_WIDTH_LABEL" description="COM_PHOCACART_FIELD_MAXIMAL_WIDTH_DESC" />
+
+			<field name="maximal_height" type="text" showon="active_size:1" label="COM_PHOCACART_FIELD_MAXIMAL_HEIGHT_LABEL" description="COM_PHOCACART_FIELD_MAXIMAL_HEIGHT_DESC" />
+
+			<field name="maximal_length" type="text" showon="active_size:1" label="COM_PHOCACART_FIELD_MAXIMAL_LENGTH_LABEL" description="COM_PHOCACART_FIELD_MAXIMAL_LENGTH_DESC" />
+
+			<field name="minimal_width" type="text" showon="active_size:1" label="COM_PHOCACART_FIELD_MINIMAL_WIDTH_LABEL" description="COM_PHOCACART_FIELD_MINIMAL_WIDTH_DESC" />
+
+			<field name="minimal_height" type="text" showon="active_size:1" label="COM_PHOCACART_FIELD_MINIMAL_HEIGHT_LABEL" description="COM_PHOCACART_FIELD_MINIMAL_HEIGHT_DESC" />
+
+			<field name="minimal_length" type="text" showon="active_size:1" label="COM_PHOCACART_FIELD_MINIMAL_LENGTH_LABEL" description="COM_PHOCACART_FIELD_MINIMAL_LENGTH_DESC" />
+
+			<field name="active_amount" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_AMOUNT_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_AMOUNT_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="lowest_amount" type="text" showon="active_amount:1" label="COM_PHOCACART_FIELD_LOWEST_AMOUNT_LABEL" description="COM_PHOCACART_FIELD_LOWEST_AMOUNT_DESC" />
+
+			<field name="highest_amount" type="text" showon="active_amount:1" label="COM_PHOCACART_FIELD_HIGHEST_AMOUNT_LABEL" description="COM_PHOCACART_FIELD_HIGHEST_AMOUNT_DESC" />
+
+			<field name="active_quantity" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_QUANTITY_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_QUANTITY_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="minimal_quantity" type="text" showon="active_quantity:1" label="COM_PHOCACART_FIELD_MINIMAL_QUANTITY_LABEL" description="COM_PHOCACART_FIELD_MINIMAL_QUANTITY_DESC" />
+
+			<field name="maximal_quantity" type="text" showon="active_quantity:1" label="COM_PHOCACART_FIELD_MAXIMAL_QUANTITY_LABEL" description="COM_PHOCACART_FIELD_MAXIMAL_QUANTITY_DESC" />
+
+			<field name="active_zone" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_ZONE_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_ZONE_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="zone" type="PhocacartZones" showon="active_zone:1" table="shipping" multiple="true" layout="joomla.form.field.list-fancy-select" label="COM_PHOCACART_FIELD_ZONES_LABEL" description="COM_PHOCACART_FIELD_ZONES_DESC" />
+
+			<field name="active_country" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_COUNTRY_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_COUNTRY_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="country" type="PhocaCartCountries" showon="active_country:1" table="shipping" multiple="true" layout="joomla.form.field.list-fancy-select" label="COM_PHOCACART_FIELD_COUNTRIES_LABEL" description="COM_PHOCACART_FIELD_COUNTRIES_DESC" />
+
+			<field name="active_region" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_REGION_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_REGION_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="region" type="PhocacartRegions" showon="active_region:1" table="shipping" multiple="true" layout="joomla.form.field.list-fancy-select" label="COM_PHOCACART_FIELD_REGIONS_LABEL" description="COM_PHOCACART_FIELD_REGIONS_DESC" />
+
+			<field name="active_zip" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="COM_PHOCACART_FIELD_ACTIVE_ZIP_LABEL" description="COM_PHOCACART_FIELD_ACTIVE_ZIP_DESC">
+				<option value="0">COM_PHOCACART_NO</option>
+				<option value="1">COM_PHOCACART_YES</option>
+			</field>
+
+			<field name="zip" type="textarea" showon="active_zip:1" label="COM_PHOCACART_FIELD_SHIPPING_ZIP_LABEL" description="COM_PHOCACART_FIELD_SHIPPING_ZIP_DESC" />
+		</fieldset>
+
+		<fieldset name="method" label="COM_PHOCACART_SHIPPING_METHOD_OPTIONS">
+			<field name="_method_note" type="note" showon="method:" class="alert alert-info w-100" description="COM_PHOCACART_SELECT_SHIPPING_METHOD_TO_DISPLAY_PARAMETERS" />
+
+			<field name="_method_params" type="phocaplaceholder" showon="method!:" class="ph-extended-params" />
+		</fieldset>
+
+		<fieldset name="tracking" label="COM_PHOCACART_SHIPMENT_TRACKING_OPTIONS">
+			<field name="tracking_link" type="phocatext" i18n="true" label="COM_PHOCACART_FIELD_TRACKING_LINK_LABEL" description="COM_PHOCACART_FIELD_TRACKING_LINK_DESC" />
+
+			<field name="tracking_description" type="phocaeditor" i18n="true" buttons="true" hide="pagebreak,readmore" filter="\Phoca\PhocaCart\Input\InputHelper::filterText" label="COM_PHOCACART_FIELD_TRACKING_DESCRIPTION_LABEL" description="COM_PHOCACART_FIELD_TRACKING_DESCRIPTION_LABEL" />
+		</fieldset>
+	</fields>
+</form>

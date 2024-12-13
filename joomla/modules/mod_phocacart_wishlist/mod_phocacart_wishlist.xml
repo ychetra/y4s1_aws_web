@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade" version="5.0">
+	<name>mod_phocacart_wishlist</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>12/06/2024</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>5.0.0Beta61</version>
+	<description>MOD_PHOCACART_WISHLIST_DESCRIPTION</description>
+	<projectName>PhocaCartWishListModule</projectName>
+
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_phocacart_wishlist">index.html</filename>
+		<filename module="mod_phocacart_wishlist">mod_phocacart_wishlist.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_wishlist.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_wishlist.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			
+			<field name="module_description" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" label="MOD_PHOCACART_WISHLIST_FIELD_MODULE_DESCRIPTION_LABEL" filter="safehtml" description="MOD_PHOCACART_WISHLIST_FIELD_MODULE_DESCRIPTION_DESC"/>
+			
+			</fieldset>	
+			
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" class="form-select" validate="moduleLayout"/>
+				<field name="moduleclass_sfx" type="textarea" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" rows="3" validate="CssIdentifier"/>
+				<field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" default="1" filter="integer" validate="options">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="number" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" default="900" filter="integer"/>
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"/>
+				</field>
+            </fieldset>
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="MOD_PHOCACART_WISHLIST" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaCartWishListModule/master/manifest.xml]]></server>
+	</updateservers>
+</extension>

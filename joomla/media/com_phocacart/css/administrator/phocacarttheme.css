@@ -1,0 +1,689 @@
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+
+.admin.com_phocacart input,
+.admin.com_phocacart button,
+.admin.com_phocacart select,
+.admin.com_phocacart textarea {
+	font-family: "Roboto", -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.admin.com_phocacart {
+	font-family: "Roboto", -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 86% !important;
+}
+.admin.com_phocacart .small{
+	font-size: 96% !important;
+}
+
+
+
+.nav-tabs > li > a {
+    letter-spacing: -0.1em !important;
+    padding: 0.7em 0.4em !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,600&subset=latin-ext');
+
+.admin.com_phocacart input,
+.admin.com_phocacart button,
+.admin.com_phocacart select,
+.admin.com_phocacart textarea {
+	font-family: "Rubik", -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.admin.com_phocacart {
+	font-family: "Rubik", -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 86% !important;
+}
+.admin.com_phocacart .small{
+	font-size: 96% !important;
+}
+*/
+
+
+
+.ph-cpanel-top-stats {
+	text-align: center;
+	padding: 0 0 1em 0;
+
+}
+
+
+
+
+
+.ph-cpanel-color {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 140px;
+	color: #fff;
+	border-radius: 3px;
+	border: 1px solid #DFE8F1;
+    box-shadow: 0px 0px 1px 1px #eaf0f6;
+}
+
+.ph-cpanel-color-header {
+	margin-top: 0px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	padding: 5px 0px 5px 3px;
+	font-size: small;
+	/*font-weight: lighter;*/
+	text-align: center;
+}
+.ph-cpanel-color-header-block {
+	padding: 5px 0px 5px 3px;
+	text-align: center;
+	color: #fff;
+}
+
+.ph-cpanel-stat-value {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	margin: 5px;
+}
+
+.ph-cpanel-color-right {
+	width: 70%;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+	border-radius: 0 3px 3px 0;
+
+}
+
+.ph-cpanel-color-left {
+	width: 30%;
+	text-align: center;
+}
+
+.ph-cpanel-color1 {
+	background: #3DDCF7;
+}
+.ph-cpanel-color2 {
+	background: #00B19D;
+}
+.ph-cpanel-color3 {
+	background: #F76397;
+}
+.ph-cpanel-color4 {
+	background: #7266BA;
+}
+.ph-cpanel-color5 {
+	background: #FFAA00;
+}
+.ph-cpanel-color6 {
+	background: #3BAFDA;
+}
+
+
+
+
+.ph-cpanel-color-left .fas {
+
+	font-size: 2em;
+}
+
+
+
+
+
+
+
+/* Multiple Upload */
+
+
+ul.plupload_filelist li  {
+	padding-top: 15px;
+}
+
+ul.plupload_filelist li.plupload_file_name {
+	width: 35%;
+}
+ul.plupload_filelist li .plupload_file_name:before {
+	font-family: 'JoomlaFont' !important;
+	color: #d0d0d0;
+    content: "\e022";
+	float: left;
+	margin: 0px 5px 5px 0px;
+	padding-bottom: 2px;
+}
+
+
+.plupload_filelist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 5px dashed #d0d0d0;
+	background: #f5f5f5;
+    border-radius: 0;
+}
+
+li.plupload_droptext {
+    font-size: 200%;
+	color: #d0d0d0;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+li.plupload_droptext:before {
+	font-family: 'JoomlaFont' !important;
+	color: #d0d0d0;
+    content: "\e022 ";
+	font-size: 200%;
+	text-align: center;
+	margin: 0px auto;
+	/*display: block-inline;*/
+	float:none;
+}
+
+.ph-red {
+	color: #d60000;
+}
+.ph-currency-row {
+
+	margin: 5px;
+	background: #FFD6D6;
+	border-radius: 3px;
+}
+
+.ph-currency-col  {
+
+	margin: 5px;
+	background: #FFD6D6;
+	border-radius: 0px;
+	text-align: center;
+}
+
+.ph-success-txt {
+	font-weight: bold;
+	color: #00B19D;
+}
+.ph-disabled-txt {
+	font-weight: bold;
+	color: #F76397;
+}
+.ph-extension-button .btn {
+	padding: 6px 5px;
+}
+
+table#extensionList tr td {
+	vertical-align: middle;
+}
+
+.ph-featured-box {
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #DFE8F1;
+}
+.ph-featured-head {
+	font-weight: bold;
+}
+.ph-featured-image {
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+.ph-featured-image-large {
+	text-align: center;
+}
+.ph-featured-image-large img {
+	margin: 10px auto;
+}
+
+.ph-featured-box a,
+.ph-featured-box a:hover,
+.ph-featured-box a:visited,
+.ph-featured-box a:focus {
+	text-decoration:none;
+	color: #555;
+}
+
+
+/* 3.3.0 */
+
+.ph-cpanel-chart-box {
+	box-shadow: 0 3px 8px 0 rgba(60,70,100,.1), 0 3px 6px 0 rgba(0,0,0,0.1);
+	background-image: linear-gradient(-45deg,#0443a5,#009bd5);
+    background-position: center;
+	border: 0;
+	color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+	margin-bottom: 1em;
+	border-radius: 3px;
+}
+
+#phocacartstatistics .ph-cpanel-chart-box {
+	margin-top: 1em;
+}
+
+.ph-icon-inside-box {
+    border: 0;
+	background-image: linear-gradient(-45deg,#ffffff,#f5f5f5);
+	box-shadow: 0 3px 8px 0 rgba(60,70,100,.1), 0 3px 6px 0 rgba(0,0,0,0.1);
+
+	background-image: linear-gradient(-45deg,#f5f5f5,#ffffff);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+}
+
+.ph-cpanel-info-box, .ph-cpanel-tips-box {
+    border: 0;
+	background-image: linear-gradient(-45deg,#ffffff,#f7f7f7);
+	box-shadow: 0 3px 8px 0 rgba(60,70,100,.1), 0 3px 6px 0 rgba(0,0,0,0.1);
+
+	background-image: linear-gradient(-45deg,#f5f5f5,#ffffff);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+
+	border-radius: 3px;
+}
+
+.ph-cpanel-color {
+    border: 0;
+	background-image: linear-gradient(-45deg,#ffffff,#f7f7f7);
+	box-shadow: 0 3px 8px 0 rgba(60,70,100,.1), 0 3px 6px 0 rgba(0,0,0,0.1);
+
+	background-image: linear-gradient(-45deg,#f5f5f5,#ffffff);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+}
+
+.ph-cpanel-color-right {
+   /* background: rgba(200,200,200,0.1);*/
+   background: #fff;
+}
+
+.ph-cpanel-color1 {
+	color: #3ddcf7;
+}
+.ph-cpanel-color1,
+.ph-cpanel-color1 .ph-cpanel-color-right {
+	background-image: linear-gradient(80deg, #3ddcf7,#0ad3f5);
+	color: #fff;
+}
+
+.ph-cpanel-color2 {
+	color: #00b19d;
+}
+.ph-cpanel-color2,
+.ph-cpanel-color2 .ph-cpanel-color-right {
+	background-image: linear-gradient(80deg, #00b19d,#007a6d);
+	color: #fff;
+}
+
+.ph-cpanel-color3 {
+	color: #F76397;
+}
+.ph-cpanel-color3,
+.ph-cpanel-color3 .ph-cpanel-color-right {
+	background-image: linear-gradient(80deg, #F76397,#f42e74);
+	color: #fff;
+}
+
+.ph-cpanel-color4 {
+	color: #7266BA;
+}
+.ph-cpanel-color4,
+.ph-cpanel-color4 .ph-cpanel-color-right {
+	background-image: linear-gradient(80deg, #7266BA,#5649a2);
+	color: #fff;
+}
+
+.ph-cpanel-color5 {
+	color: #FFAA00;
+}
+.ph-cpanel-color5,
+.ph-cpanel-color5 .ph-cpanel-color-right {
+	background-image: linear-gradient(80deg, #FFAA00,#cc8800);
+	color: #fff;
+}
+
+.ph-cpanel-color6 {
+	color: #3BAFDA;
+}
+.ph-cpanel-color6,
+.ph-cpanel-color6 .ph-cpanel-color-right {
+	background-image: linear-gradient(80deg, #3BAFDA,#2493bd);
+	color: #fff;
+}
+
+.sidebar-nav .nav-list > li > a:focus,
+.sidebar-nav .nav-list > li > a:hover,
+.nav-list > .active > a, .nav-list > .active > a:hover,
+.nav-list > .active > a:focus,
+
+.sidebar-nav .nav-list > .active > a,
+.sidebar-nav .nav-list > .active > a:hover,
+.sidebar-nav .nav-list > .active > a:focus {
+    background-color: #2D6CA2 !important;
+	background-image: linear-gradient(-80deg, #2D6CA2,#215078);
+}
+
+.ph-admin-manage table {
+	/*box-shadow: 0 3px 8px 0 rgba(60,70,100,.1), 0 3px 6px 0 rgba(0,0,0,0.1);*/
+
+	box-shadow: 0 3px 6px 0 #dfe8f1;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+}
+
+#phAdminEdit .subform-repeatable-group {
+    background-color: #F1F5F9;
+	border:0;
+	border-radius: 5px;
+	margin-top: 1em;
+	padding: 2em 1em;
+}
+
+#phAdminEdit .subform-repeatable-group[draggable=true] {
+    background-color: #20c997;
+}
+
+#phAdminEdit .form-horizontal .subform-repeatable-group .control-group {
+	margin-bottom: 8px;
+}
+
+#phAdminEdit .subform-repeatable-group .subform-repeatable-group {
+	background: #cfdbe5;
+	border:0;
+	border-radius: 5px;
+}
+
+#phAdminEdit .subform-repeatable-group .subform-repeatable-group[draggable=true] {
+    background-color: #20c997;
+}
+
+#phAdminEdit .btn.group-add,
+#phAdminEdit .btn.group-remove {
+	border-radius: 3px !important;
+}
+#phAdminEdit .btn.group-move {
+	font-weight: normal !important;
+    border-radius: 3px 0 0 3px !important;
+    border: 0 !important;
+	margin-right: 0 !important;
+}
+#phAdminEdit .ph-admin-order-link,
+#phAdminEdit .ph-admin-download-links {
+	background: #F1F5F9;
+	border:0;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+}
+#phAdminEdit .ph-admin-download-links table tr td {
+	padding: 5px;
+}
+
+.subhead .btn.btn-warning:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+	color: #000;
+}
+
+.subhead .btn.btn-warning:hover .ph-icon-wizard {
+	color: #000;
+}
+
+
+.btn-toolbar .btn-buy,
+.btn-buy {
+	background-image: none !important;
+    background-repeat: none !important;
+    color: #555 !important;
+	box-shadow: none !important;
+	background-color: #F9E151 !important;
+	border-color: #F9E151 !important;
+	border: 0px !important;
+
+}
+
+.btn-buy:hover, .btn-buy:focus {
+	 background-color: #F9E151 !important;
+	 border-color: #F9E151 !important;
+	 border: 0px solid #F9E151 !important;
+}
+
+.ph-extensions-filter {
+	margin-bottom: 0.7em;
+}
+
+#phAdminEdit .subform-table-layout .control-group .controls {
+	min-width: auto;
+}
+
+#phAdminEdit .input-xxlarge { width: 100%;}
+#phAdminEdit .input-xlarge { width: 100%;}
+#phAdminEdit .input-mini { width: 5em;}
+#phAdminEdit .input-small { width: 10em;}
+
+.ph-order-products {
+	width: 100%;
+}
+.ph-control-group-text {
+	padding-bottom: 1em;
+}
+
+.ph-action-row {
+	white-space: nowrap;
+}
+
+
+
+/* Icons next to menu items - menu icons */
+a.ph-submenu:before {
+	color: #A6AAB1;
+    float:left;
+    margin-right: 5px;
+	margin-top: 2px;
+	font-family: 'JoomlaFont' !important;
+	content: "\13c5b";/*home*/
+}
+
+.item-level-1 > a.ph-submenu:before {
+	font-size: 1.2em;
+	margin: 0 .85rem;
+}
+
+.nav a.ph-submenu.ph-submenu-back:before {
+	color: #fff;
+	content: "\13bf1";/*arrow-left*/
+}
+
+.nav a.ph-submenu.ph-submenu-phocacart:before {
+	color: #fff;
+	content: "\13c12";/*cart*/
+}
+
+.nav a.ph-submenu.ph-submenu-cp:before {
+	color: #A6AAB1;
+	content: "\13c5b";/*home*/
+}
+
+.nav a.ph-submenu.ph-submenu-items:before {
+	color: #c1a46d;
+	content: "\13beb";/*archive*/
+}
+.nav a.ph-submenu.ph-submenu-categories:before {
+	color: #da7400;
+	content: "\13c4d";/*folder-open*/
+}
+.nav a.ph-submenu.ph-submenu-specifications:before {
+	color: #4e5f81;
+	content: "\13c3a";/*equalizer*/
+}
+.nav a.ph-submenu.ph-submenu-manufacturers:before {
+	color: #ff7d49;
+	content: "\13cda";/*wrench*/
+}
+.nav a.ph-submenu.ph-submenu-orders:before {
+	color: #0099cc;
+	content: "\13c12";/*cart*/
+}
+.nav a.ph-submenu.ph-submenu-statuses:before {
+	color: #c1976d;
+	content: "\13c34";/*disable-motion*/
+}
+.nav a.ph-submenu.ph-submenu-stockstatuses:before {
+	color: #777777;
+	content: "\13c27";/*components*/
+}
+.nav a.ph-submenu.ph-submenu-shippings:before {
+	color: #afbb6a;
+	content: "\13c2f";/*cube*/
+}
+.nav a.ph-submenu.ph-submenu-countries:before {
+	color: #478CD1;
+    content: "\13c52";/*globe*/
+}
+.nav a.ph-submenu.ph-submenu-regions:before {
+	color: #01868B;
+    content: "\13c52";/*globe*/
+}
+.nav a.ph-submenu.ph-submenu-zones:before {
+	color: #a5dee5;
+    content: "\13c67";/*location*/
+}
+.nav a.ph-submenu.ph-submenu-payments:before {
+	color: #4f9ce2;
+    content: "\13afb";/*credit*/
+}
+.nav a.ph-submenu.ph-submenu-currencies:before {
+	color: #dca300;
+    content: "\13cc2";/*tags-squared*/
+}
+.nav a.ph-submenu.ph-submenu-taxes:before {
+	color: #dd5500;
+    content: "\13c0f";/*calendar*/
+}
+.nav a.ph-submenu.ph-submenu-users:before {
+	color: #7faa7f;
+    content: "\13cd4";/*users*/
+}
+.nav a.ph-submenu.ph-submenu-groups:before {
+	color: #aa7faa;
+	content: "\13c57";/*groups*/
+}
+.nav a.ph-submenu.ph-submenu-rewards:before {
+	color: #7faaaa;
+	content: "\13bdc";/*vcard*/
+}
+.nav a.ph-submenu.ph-submenu-formfields:before {
+	color: #ffde00;
+    content: "\13c43";/*fields*/
+}
+.nav a.ph-submenu.ph-submenu-reviews:before {
+	color: #399ed0;
+    content: "\13c24";/*comment*/
+}
+.nav a.ph-submenu.ph-submenu-coupons:before {
+	color: #FF6685;
+    content: "\13c51";/*gift*/
+}
+.nav a.ph-submenu.ph-submenu-discounts:before {
+	color: #aa56fe;
+    content: "\13ca8";/*scissors*/
+}
+.nav a.ph-submenu.ph-submenu-downloads:before {
+	color: #33af49;
+    content: "\13c35";/*download-alt*/
+}
+.nav a.ph-submenu.ph-submenu-tags:before {
+	color: #CC0033;
+    content: "\13cc0";/*tag-double*/
+}
+.nav a.ph-submenu.ph-submenu-parameters:before {
+	color: #0040ff;
+	content: "\13ce3";/*ellipsis-h*/
+}
+.nav a.ph-submenu.ph-submenu-parametervalues:before {
+	color: #0040ff;
+    content: "\13ce4";/*ellipsis-v*/
+}
+.nav a.ph-submenu.ph-submenu-fieldgroups:before {
+	color: #ff4000;
+	content: "\13ce3";/*ellipsis-h*/
+}
+.nav a.ph-submenu.ph-submenu-fields:before {
+	color: #ff4000;
+    content: "\13ce4";/*ellipsis-v*/
+}
+.nav a.ph-submenu.ph-submenu-feeds:before {
+	color: #ffb300;
+    content: "\13c41";/*feed*/
+}
+.nav a.ph-submenu.ph-submenu-wishlists:before {
+	color: #EA7C7C;
+    content: "\13c5a";/*heart*/
+}
+.nav a.ph-submenu.ph-submenu-contenttypes:before {
+	color: #7faa7f;
+	content: "\13cc9";/*sourcetree*/
+}
+.nav a.ph-submenu.ph-submenu-questions:before {
+	color: #9900CC;
+    content: "\13c73";/*messaging*/
+}
+.nav a.ph-submenu.ph-submenu-times:before {
+	color: #73b9ff;
+    content: "\13c21";/*clock-alt*/
+}
+.nav a.ph-submenu.ph-submenu-submititems:before {
+	color: #7fff73;
+    content: "\13d11";/*duplicate-alt*/
+}
+.nav a.ph-submenu.ph-submenu-statistics:before {
+	color: #c1756d;
+    content: "\13c92";/*pie*/
+}
+.nav a.ph-submenu.ph-submenu-reports:before {
+	color: #8c0069;
+    content: "\13c14";/*chart*/
+}
+.nav a.ph-submenu.ph-submenu-hits:before {
+	color: #fb1000;
+    content: "\13c78";/*mouse-pointer-highlighter*/
+}
+.nav a.ph-submenu.ph-submenu-imports:before {
+	color: #668099;
+	content: "\13cb2";/*sign-in*/
+}
+.nav a.ph-submenu.ph-submenu-exports:before {
+	color: #669999;
+    content: "\13cb3";/*sign-out*/
+}
+.nav a.ph-submenu.ph-submenu-logs:before {
+	color: #c0c0c0;
+    content: "\13cd1";/*logs*/
+}
+.nav a.ph-submenu.ph-submenu-info:before {
+	color: #3378cc;
+    content: "\13c5d";/*info-circle*/
+}
+.nav a.ph-submenu.ph-submenu-extensions:before {
+	color: #2693ff;
+    content: "\13c77";/*modules*/
+}
+.nav a.ph-submenu.ph-submenu-vendors:before {
+	color: #b30059;
+    content: "\13cd4";/*users*/
+}
+.nav a.ph-submenu.ph-submenu-sections:before {
+	color: #b35900;
+    content: "\13c81";/*nofification-circle*/
+}
+.nav a.ph-submenu.ph-submenu-units:before {
+	color: #ff9326;
+    content: "\13c72";/*menu*/
+}
+.nav a.ph-submenu.ph-submenu-bulkprices:before {
+	color: #f310de;
+    content: "\13c20";/*click*/
+}
+
+
+
+#phocacartmanager .ph-multiple-table tr td {
+
+	padding: 0.3em;
+}
